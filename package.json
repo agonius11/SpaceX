@@ -1,0 +1,26 @@
+{
+  "name": "spacex_launch_stats",
+  "version": "1.0.0",
+  "description": "App that lists SpaceX launch missions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --exec babel-node src/server.js",
+    "server": "nodemon --exec babel-node src/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "zillda",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.12.0",
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^1.19.4"
+  }
+}
